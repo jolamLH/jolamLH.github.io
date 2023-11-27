@@ -5,17 +5,16 @@
   <title>Bubble Burster</title>
 </head>
 
-  <form>
-    <input list="genre">
+  <form onsubmit="reallyBurst()">
+    <input type = "list" id="genreList">
       <datalist id="genre">
        <option value="Pop">
        <option value="Hip Hop">
        <option value="R&B">
        <option value="Rock">
     </datalist>
+   <button id="button">Really Burst My Bubble</button>
 </form> 
-
-  <button id="button" onclick="reallyBurst()">Really Burst My Bubble</button>
 
 <body>
   <script src="index.js"></script>
