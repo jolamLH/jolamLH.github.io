@@ -5,16 +5,19 @@
   <title>Bubble Burster</title>
 </head>
 
-  <form onsubmit="reallyBurst()">
-    <input type = "list" id="genreList">
-      <datalist id="genre">
-       <option value="Pop">
-       <option value="Hip Hop">
-       <option value="R&B">
-       <option value="Rock">
-    </datalist>
-   <button id="button">Really Burst My Bubble</button>
-</form> 
+<form onsubmit = "reallyBurst()">
+  <input type="radio" id="pop" name="fav_language" value="Pop">
+  <label for="pop">Pop</label><br>
+  <input type="radio" id="hiphop" name="fav_language" value="HipHop">
+  <label for="hiphop">Hip Hop</label><br>
+  <input type="radio" id="indie" name="fav_language" value="Indie">
+  <label for="indie">Indie/label><br>
+  <input type="radio" id="rock" name="fav_language" value="Rock">
+  <label for="rock">Rock</label><br>
+  <input type="radio" id="rb" name="fav_language" value="rb">
+  <label for="rb">R&B</label><br>
+  <input type="submit" value="Submit"> 
+</form>
 
 <body>
   <script src="index.js"></script>
