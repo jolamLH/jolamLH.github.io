@@ -30,11 +30,18 @@ var isRB = document.getElementById("rb").value;
 
 function reallyBurst() { 
   if (isPop == "Pop"){
-    opposite = "K-Pop";
+    opposite = "Metal";
   }else if (isHipHop == "HipHop"){
+    opposite = "K-Pop"; 
+  }else if (isIndie == "Indie"){
     opposite = "Metal"; 
+  }else if (isRock == "Rock"){
+    opposite = "Pop";
+  }else if (isRB == "RB"){
+    opposite = "Country" 
   }
   console.log(opposite); 
+  alert ("Your music opposite is: " + opposite);
 }
   </script>
 </body>
