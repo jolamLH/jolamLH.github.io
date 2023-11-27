@@ -22,25 +22,12 @@
 <body>
   <script>
 var opposite = ""; 
-var isPop = document.getElementById("pop").value;
-var isHipHop = document.getElementById("hiphop").value;
-var isIndie = document.getElementById("indie").value;
-var isRock = document.getElementById("rock").value;
-var isRB = document.getElementById("rb").value;
-
 function reallyBurst() { 
-  if (isPop == "Pop"){
-    opposite = "Metal";
-  }else if (isHipHop == "HipHop"){
-    opposite = "K-Pop"; 
-  }else if (isIndie == "Indie"){
-    opposite = "Metal"; 
-  }else if (isRock == "Rock"){
-    opposite = "Pop";
-  }else if (isRB == "RB"){
-    opposite = "Country" 
-  }
-  console.log(opposite); 
+if(document.getElementById("pop").checked) {
+  opposite = "Metal";
+}else if(document.getElementById("hiphop").checked) {
+  opposite = "K-Pop";
+}  
   alert ("Your music opposite is: " + opposite);
 }
   </script>
