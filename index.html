@@ -22,17 +22,19 @@
 </form>
 
 <body>
-  <script>
-var opposite = ""; 
-function reallyBurst() { 
-if(document.getElementById("pop").checked) {
-  opposite = "Metal";
-}else if(document.getElementById("hiphop").checked) {
-  opposite = "K-Pop";
-}  
-  alert ("Your music opposite is: " + opposite);
+ <script>
+  var opposite = "";
+  function reallyBurst() { 
+   if(document.getElementById("pop").checked) {
+     opposite = "Metal";
+   }else if(document.getElementById("hiphop").checked) {
+     opposite = "K-Pop";
+   }
+	  document.getElementById("opposite").innerHTML = opposite;
 }
-  </script>
+</script>
+<span id="opposite"></span>
+
 </body>
 
 </html>
