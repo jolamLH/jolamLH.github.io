@@ -29,10 +29,17 @@
      opposite = "Metal";
    }else if(document.getElementById("hiphop").checked) {
      opposite = "K-Pop";
+   }else if (document.getElementById("indie").checked){
+     opposite = "Metal";
+   }else if (document.getElementById("rock").checked){
+     opposite = "Pop";
+   }else if (document.getElementById("rb").checked){
+     opposite = "Country";
    }
-	  document.getElementById("opposite").innerHTML = opposite;
 }
+document.getElementById("opposite").innerHTML = "Have you tried" + opposite;
 </script>
+
 <span id="opposite"></span>
 
 </body>
