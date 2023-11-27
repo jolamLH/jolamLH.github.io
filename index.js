@@ -1,6 +1,6 @@
 console.log('hello world');
 var opposite; 
-var genre = “document.getElementById(“genre”).value;
+var genre = “form.getElementById(“genre”).value;
 
 function reallyBurst() { 
   if (genre === “Pop”){
