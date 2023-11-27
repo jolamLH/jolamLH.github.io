@@ -29,14 +29,13 @@ var isRock = document.getElementById("rock").value;
 var isRB = document.getElementById("rb").value;
 
 function reallyBurst() { 
-  if (isPop == pop){
-    let opposite = "K-Pop";
+  if (isPop == "Pop"){
+    opposite = "K-Pop";
+  }else if (isHipHop == "HipHop"){
+    opposite = "Metal"; 
   }
-  if (isHipHop == hiphop){
-    let opposite = "Metal"; 
-  }
+  console.log(opposite); 
 }
-console.log(opposite); 
   </script>
 </body>
 
